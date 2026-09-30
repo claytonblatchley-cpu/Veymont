@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEYmont — Equity Intelligence</title>
+  <meta name="description" content="VEYmont provides clear, research-focused information on public companies.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">VEY<span>mont</span></div>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#pro">VEYmont Pro</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">EQUITY INTELLIGENCE</p>
+      <h1>Understand a company<br>before you invest.</h1>
+      <p class="subhead">Clear financial information, valuation metrics, and research tools — in one place.</p>
+
+      <div class="search-wrap">
+        <input id="tickerInput" type="text" placeholder="Search ticker — AAPL, MSFT, NVDA..." maxlength="8">
+        <button id="searchBtn">Research</button>
+      </div>
+      <p class="hint">Try AAPL, MSFT, NVDA, AMZN, or GOOGL</p>
+    </section>
+
+    <section id="research" class="research-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COMPANY RESEARCH</p>
+          <h2 id="companyName">Apple Inc.</h2>
+          <p id="companyTicker">NASDAQ: AAPL</p>
+        </div>
+        <div class="quote">
+          <strong id="price">$257.50</strong>
+          <span id="change" class="positive">+1.24%</span>
+        </div>
+      </div>
+
+      <div class="chart">
+        <svg viewBox="0 0 900 260" preserveAspectRatio="none" aria-label="Illustrative price chart">
+          <defs>
+            <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#173a5e" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="#173a5e" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path class="area" d="M0 215 L70 205 L130 220 L190 175 L250 185 L315 145 L370 160 L430 115 L495 130 L555 92 L620 105 L690 70 L760 92 L830 50 L900 62 L900 260 L0 260 Z"/>
+          <path class="line" d="M0 215 L70 205 L130 220 L190 175 L250 185 L315 145 L370 160 L430 115 L495 130 L555 92 L620 105 L690 70 L760 92 L830 50 L900 62"/>
+        </svg>
+        <div class="chart-labels"><span>1Y AGO</span><span>6M</span><span>3M</span><span>NOW</span></div>
+      </div>
+
+      <div class="metrics" id="metrics"></div>
+
+      <div class="grid-two">
+        <article class="card">
+          <p class="eyebrow">OVERVIEW</p>
+          <p id="overview">Apple designs, manufactures, and markets consumer electronics, software, and services.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">WHAT TO WATCH</p>
+          <ul id="watch">
+            <li>Revenue and earnings growth</li>
+            <li>Free cash flow generation</li>
+            <li>Valuation relative to history</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <div>
+            <p class="eyebrow">RESEARCH FRAMEWORK</p>
+            <h3>Key areas</h3>
+          </div>
+          <span class="tag">Educational</span>
+        </div>
+        <div class="framework">
+          <div><b>Growth</b><span>Revenue, EPS, margins</span></div>
+          <div><b>Quality</b><span>ROIC, balance sheet, cash flow</span></div>
+          <div><b>Valuation</b><span>P/E, EV/EBITDA, FCF</span></div>
+          <div><b>Risk</b><span>Competition, cycles, concentration</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pro" class="pro">
+      <p class="eyebrow">COMING LATER</p>
+      <h2>VEYmont Pro</h2>
+      <p>Advanced research tools for investors who want to go deeper.</p>
+      <div class="pro-grid">
+        <div>DCF valuation</div>
+        <div>Portfolio analytics</div>
+        <div>Advanced comparisons</div>
+        <div>Saved watchlists</div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">ABOUT VEYMONT</p>
+      <h2>Research first. Noise last.</h2>
+      <p>VEYmont is designed to make public-company information easier to understand. Data and research are presented for informational and educational purposes and are not personalized investment advice.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">VEY<span>mont</span></div>
+    <p>© 2026 VEYmont. For informational and educational purposes only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
